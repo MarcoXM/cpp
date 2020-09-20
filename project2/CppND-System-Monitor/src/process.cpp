@@ -5,43 +5,31 @@
 #include <vector>
 
 #include "process.h"
+#include "linux_parser.h"
 
 using std::string;
 using std::to_string;
 using std::vector;
 
-// TODO: Return this process's ID
-int Process::Pid() {
-    return pid_;
-    }
+Process::Process(int pid, long totalJiffies) : pid_(pid), cpuUtil(CalcCpuUtilization(totalJiffies)) {}
 
-// TODO: Return this process's CPU utilization
-float Process::CpuUtilization() { 
-    cpu_ = static_cast<float> (LinuxParser::ActiveJiffies(pid_)); 
-	return cpu_;
- }
+int Process::Pid() const { return pid_; }
 
-// TODO: Return the command that generated this process
-string Process::Command() { 
-    return LinuxParser::Command(pid_); }
-
-// TODO: Return this process's memory utilization
-string Process::Ram() { 
-    return LinuxParser::Ram(pid_); 
+float Process::CalcCpuUtilization(const long totalJiffies) {
+    long activeJiffies = LinuxParser::ActiveJiffies(pid_);
+    return (activeJiffies * 1.0 / totalJiffies);
 }
 
-// TODO: Return the user (name) that generated this process
-string Process::User() { 
-    return LinuxParser::User(pid_); 
-}
+float Process::CpuUtilization() const { return cpuUtil; }
 
-// TODO: Return the age of this process (in seconds)
-long int Process::UpTime() { 
-    return LinuxParser::UpTime(pid_); 
-}
+string Process::Command() const { return LinuxParser::Command(pid_); }
 
-// TODO: Overload the "less than" comparison operator for Process objects
-// REMOVE: [[maybe_unused]] once you define the function
-bool Process::operator<(Process const& a) const { 
-    return this->cpu_ > a.cpu_ ? true : false; 
-    }
+string Process::Ram() const { return LinuxParser::Ram(pid_); }
+
+string Process::User() const { return LinuxParser::User(pid_); }
+
+long int Process::UpTime() const { return LinuxParser::UpTime(pid_); }
+
+bool Process::operator<(Process const& rhs) const {
+    return this->cpuUtil > rhs.cpuUtil;
+}
