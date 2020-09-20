@@ -1,0 +1,3 @@
+/Users/marco/Codes/cpp/project2/CppND-System-Monitor/build/CMakeFiles/rebuild_cache.dir
+/Users/marco/Codes/cpp/project2/CppND-System-Monitor/build/CMakeFiles/edit_cache.dir
+/Users/marco/Codes/cpp/project2/CppND-System-Monitor/build/CMakeFiles/monitor.dir
