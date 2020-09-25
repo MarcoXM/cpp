@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/marco/Codes/cpp/project2/CppND-System-Monitor/include
+CXX_INCLUDES = -I/usr/local/Cellar/ncurses/6.2/include -I/Users/marco/Codes/cpp/project2/CppND-System-Monitor/include
 
 CXX_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wall -Wextra -std=gnu++17
 

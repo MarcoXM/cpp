@@ -53,10 +53,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/04/64hnqq3152g_m2lj0wwznwvr0000gn/T/AppTranslocation/EBEFAA4A-A58F-4FE3-950C-59B34E8DA1F7/d/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/04/64hnqq3152g_m2lj0wwznwvr0000gn/T/AppTranslocation/EBEFAA4A-A58F-4FE3-950C-59B34E8DA1F7/d/CMake.app/Contents/bin/cmake -E rm -f
+RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =

@@ -13,6 +13,10 @@ CMakeFiles/monitor.dir/src/main.cpp.o: ../include/process.h
 CMakeFiles/monitor.dir/src/main.cpp.o: ../include/processor.h
 CMakeFiles/monitor.dir/src/main.cpp.o: ../include/system.h
 CMakeFiles/monitor.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/monitor.dir/src/main.cpp.o: /usr/local/Cellar/ncurses/6.2/include/curses.h
+CMakeFiles/monitor.dir/src/main.cpp.o: /usr/local/Cellar/ncurses/6.2/include/ncursesw/curses.h
+CMakeFiles/monitor.dir/src/main.cpp.o: /usr/local/Cellar/ncurses/6.2/include/ncursesw/ncurses_dll.h
+CMakeFiles/monitor.dir/src/main.cpp.o: /usr/local/Cellar/ncurses/6.2/include/ncursesw/unctrl.h
 
 CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: ../include/format.h
 CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: ../include/linux_parser.h
@@ -21,6 +25,10 @@ CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: ../include/process.h
 CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: ../include/processor.h
 CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: ../include/system.h
 CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: ../src/ncurses_display.cpp
+CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: /usr/local/Cellar/ncurses/6.2/include/curses.h
+CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: /usr/local/Cellar/ncurses/6.2/include/ncursesw/curses.h
+CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: /usr/local/Cellar/ncurses/6.2/include/ncursesw/ncurses_dll.h
+CMakeFiles/monitor.dir/src/ncurses_display.cpp.o: /usr/local/Cellar/ncurses/6.2/include/ncursesw/unctrl.h
 
 CMakeFiles/monitor.dir/src/process.cpp.o: ../include/linux_parser.h
 CMakeFiles/monitor.dir/src/process.cpp.o: ../include/process.h
